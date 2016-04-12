@@ -1,0 +1,30 @@
+version: 1
+formatters:
+    simpleFormater:
+        format: '%(levelname)-8s:p%(process)d:%(name)s> %(message)s'
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        formatter: simpleFormater
+        level: DEBUG
+        stream: ext://sys.stdout
+    file:
+        class : logging.handlers.RotatingFileHandler
+        formatter: simpleFormater
+        filename: app.log
+        maxBytes: 1024
+        backupCount: 3
+
+loggers:
+    main:
+        level: DEBUG
+    record_processor:
+        level: DEBUG
+    config:
+        level: DEBUG
+
+
+root:
+    level: INFO
+    handlers: [file]

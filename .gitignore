@@ -1,0 +1,9 @@
+app.log
+.DS_Store
+.idea/
+__pycache__/
+bin/
+lib/
+include/
+pip-selfcheck.json
+
