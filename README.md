@@ -45,7 +45,11 @@ If you get an error about NoAuthHandlerFound, boto was unable to read the enviro
 
 ## Running
 
-Creating a stream is simple and results in no output on success.
 ```
 `amazon_kclpy_helper.py --print_command --java $JAVA_HOME/bin/java --properties main.properties`
 ```
+
+## Logging
+
+Currently logging is setup to write to a file `app.log`
+
