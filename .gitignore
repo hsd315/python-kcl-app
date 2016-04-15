@@ -1,4 +1,4 @@
-app.log
+app.log*
 .DS_Store
 .idea/
 __pycache__/
